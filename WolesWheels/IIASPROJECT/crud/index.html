@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Car Rental CRUD</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="../after/index.html" class="logo"><img src="https://i.postimg.cc/gcZdykyW/jeep.png" alt="car logo" ></a>
+
+    <i class="bx bx-menu" id="menu-icon"></i>
+
+    <ul class="navbar">
+        <li><a href="../after/index.html">Beranda</a></li>
+        <li><a href="../after/index.html">Panduan</a></li>
+        <li><a href="../after/index.html">Layanan</a></li>
+        <li><a href="../after/index.html">Tentang</a></li>
+        <li><a href="../after/index.html">Ulasan</a></li>
+    </ul> 
+      
+    <div class="user-icon">
+      <img src="account.png" alt="User Icon" width="50" height="50">
+
+      </div>
+
+</header>
+  <br><br><br>
+  <br><br><br>
+  <br><br><br>
+  <br><br><br>
+  <br><br><br>
+  <div class="container">
+    <h2>Car Rental</h2>
+    <div class="row radio-group">
+      <label>Car Rental</label>
+      <input type="radio" name="driver" value="Without Driver" checked /> Without Driver
+      <input type="radio" name="driver" value="With Driver" /> With Driver
+    </div>
+    <div class="row">
+      <label>Your Rental Location</label>
+      <input type="text" id="location" placeholder="Enter city or region" />
+    </div>
+    <div class="row">
+      <label>Rental Start Date</label>
+      <input type="date" id="startDate" />
+      <label>Start Time</label>
+      <input type="time" id="startTime" />
+    </div>
+    <div class="row">
+      <label>Rental End Date</label>
+      <input type="date" id="endDate" />
+      <label>End Time</label>
+      <input type="time" id="endTime" />
+    </div>
+    <div class="button-group">
+      <button onclick="addRental()">Search Car</button>
+      <button onclick="saveToLocalStorage()">Save</button>
+      <button onclick="loadFromLocalStorage()">Load</button>
+      <button onclick="exportToCSV()">Export CSV</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Driver</th>
+          <th>Location</th>
+          <th>Start</th>
+          <th>End</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="rentalList"></tbody>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

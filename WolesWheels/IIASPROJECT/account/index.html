@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Editable Glassmorphism Card</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Gunakan CSS lama Anda di sini seperti sebelumnya... (dipersingkat) */
+    body {
+      background: url('https://i.postimg.cc/GhkYRtB3/background.png') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .card {
+      height: 420px;
+      width: 320px;
+      background-color: rgba(255, 255, 255, .06);
+      backdrop-filter: blur(20px);
+      position: absolute;
+      margin: auto;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      border-radius: 8px;
+      box-shadow: 20px 20px 22px rgba(0, 0, 0, .2);
+      padding-top: 20px;
+    }
+
+    .card-img {
+      height: 120px;
+      width: 120px;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, .06);
+      backdrop-filter: blur(20px);
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    .card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .description, .details {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    input[type="text"], input[type="number"] {
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid #ccc;
+      color: #fff;
+      text-align: center;
+      font-size: 20px;
+      outline: none;
+      width: 80%;
+      margin: 10px auto;
+      display: block;
+    }
+
+    .details {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+
+    .details div {
+      color: #fff;
+    }
+
+    button {
+      background-color: rgba(255, 255, 255, .1);
+      border: none;
+      color: #fff;
+      padding: 10px;
+      width: 80%;
+      margin: 10px auto;
+      display: block;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    ::placeholder {
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="card-img">
+      <img src="https://i.postimg.cc/bv6k55ZQ/profile-picture.jpg" alt="Profile Image" />
+    </div>
+
+    <div class="description">
+      <input type="text" id="name" placeholder="Enter Name" value="" />
+      <input type="text" id="role" placeholder="Enter Role" value="" />
+    </div>
+
+    <button class="primary-text">View Profile</button>
+
+        <div class="details">
+            <div class="rating">
+                <h6 class="primary-text">86%</h6>
+                <h6 class="secondary-text">Rating</h6>
+            </div>
+
+            <div class="activity">
+                <h6 class="primary-text">92%</h6>
+                <h6 class="secondary-text">Activity</h6>
+            </div>
+    </div>
+  </div>
+</body>
+</html>

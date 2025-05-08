@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Turret+Road:wght@200;300;400;500;700;800&display=swap');
+
+* { font-family: "Poppins", sans-serif; margin: 0; padding: 0; box-sizing: border-box; scroll-padding-top: 2rem; scroll-behavior: smooth; list-style: none; text-decoration: none; }
+:root { --main-color: #FE5B3D; --second-color: #FFAC38; --text-color: #000000; --gradient: linear-gradient(#FE5B3D, #FFAC38); }
+html::-webkit-scrollbar { width: 0.5rem; }
+html::-webkit-scrollbar-track { background: transparent; }
+html::-webkit-scrollbar-thumb { background: var(--main-color); border-radius: 5rem; }
+section { padding: 50px 100px; }
+header { position: fixed; width: 100%; top: 0; right: 0; z-index: 100; display: flex; justify-content: space-between; align-items: center; background: #f7e0e0; padding: 15px 100px; }
+.logo img { width: 40px; }
+.navbar { display: flex; }
+    .navbar li { position: relative; }
+    .navbar a { font-size: 1rem; padding: 10px 20px; color: var(--text-color); font-weight: 500; }
+        .navbar a::after { content: ''; width: 0; height: 3px; background: var(--gradient); bottom: -4px; left: 0; transition: .5s; position: absolute; }
+            .navbar a:hover::after { width: 100%; }
+    header .ri-close-line { display: none; }
+#menu-icon { font-size: 24px; cursor: pointer; z-index: 110; display: none; }
+.header-btn a { padding: 10px 20px; color: var(--text-color); font-weight: 500; }
+.header-btn .sign-in { background: #474FA0; color: #1a0000; border-radius: .5rem; transition: .5s; }
+    .header-btn .sign-in:hover { background: var(--main-color); }
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: #000000;
+  }
+  
+  .container {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    width: 140px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  input[type="time"] {
+    flex: 1;
+    padding: 5px;
+  }
+  
+  .radio-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .button-group {
+    margin-top: 10px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    background: orange;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background: white;
+  }
+  
+  th,
+  td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .user-icon {
+    margin-left: auto;
+    margin-right: 20px;
+  }
+  
+  .user-icon img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+  }
